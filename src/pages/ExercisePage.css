@@ -1,0 +1,90 @@
+.exercise-container {
+  height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.main-layout {
+  flex: 1;
+  display: flex;
+}
+
+.left-panel {
+  background: #e2e8f0;
+  padding: 16px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 2px solid #cbd5e1;
+}
+
+.exercise-button {
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.exercise-button.active {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.content-panel {
+  flex: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas-area {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  background: black;
+}
+
+.video-feed,
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.control-btn {
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  background: #1e40af;
+  border: none;
+  cursor: pointer;
+}
+
+.control-btn.stop {
+  background: #dc2626;
+}
+
+.control-btn.save {
+  background: #16a34a;
+}
